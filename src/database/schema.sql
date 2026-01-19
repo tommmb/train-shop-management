@@ -1,10 +1,4 @@
--- Database Schema for Train Model Shop System
--- Reverse-engineered from DatabaseOperations.java
--- PostgreSQL Version
-
--- ============================================
--- USER MANAGEMENT TABLES
--- ============================================
+==================== USER MANAGEMENT TABLES ====================
 
 -- Stores user addresses (referenced by Users)
 CREATE TABLE UserAddresses (
@@ -56,9 +50,7 @@ CREATE TABLE UserRoles (
     FOREIGN KEY (role_id) REFERENCES Roles(role_id)
 );
 
--- ============================================
--- PRODUCT TABLES
--- ============================================
+==================== PRODUCT TABLES ====================
 
 -- Main products table (base table for all product types)
 -- Product codes follow patterns:
@@ -118,9 +110,7 @@ CREATE TABLE TrainSetProducts (
     FOREIGN KEY (product_id) REFERENCES Products(product_id)
 );
 
--- ============================================
--- ORDER TABLES
--- ============================================
+==================== ORDER TABLES ====================
 
 -- Orders table
 -- Status values: 'PENDING', 'CONFIRMED', 'FULFILLED', 'CANCELLED'
@@ -143,13 +133,8 @@ CREATE TABLE OrderLine (
     FOREIGN KEY (product_id) REFERENCES Products(product_id)
 );
 
--- ============================================
--- INITIAL DATA - Roles
--- ============================================
+==================== INITIAL DATA - Roles ====================
 
 INSERT INTO Roles (role_name) VALUES ('CUSTOMER');
 INSERT INTO Roles (role_name) VALUES ('STAFF');
 INSERT INTO Roles (role_name) VALUES ('MANAGER');
-
-
-GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE products TO your_user;
