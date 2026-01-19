@@ -1,0 +1,9 @@
+*.iml
+*.idea
+/out
+.DS_STORE
+.env
+.vscode
+target/
+*.form
+*.class
