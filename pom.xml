@@ -24,16 +24,14 @@
             <artifactId>postgresql</artifactId>
             <version>42.7.9</version>
         </dependency>
+        <!-- JUnit Jupiter (for tests) -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
-
-    <!-- Source: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
-    <!-- JUnit Jupiter Driver -->
-    <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>6.0.0</version>
-        <scope>test</scope>
-    </dependency>
 
     <build>
         <plugins>
