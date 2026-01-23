@@ -110,7 +110,3 @@ CREATE TABLE OrderLine (
     FOREIGN KEY (order_id) REFERENCES Orders(order_id),
     FOREIGN KEY (product_id) REFERENCES Products(product_id)
 );
-
-INSERT INTO Roles (role_name) VALUES ('CUSTOMER');
-INSERT INTO Roles (role_name) VALUES ('STAFF');
-INSERT INTO Roles (role_name) VALUES ('MANAGER');

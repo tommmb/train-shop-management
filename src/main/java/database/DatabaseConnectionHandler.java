@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DatabaseConnectionHandler {
     private static final String DB_URL = "jdbc:postgresql://localhost:5432/com2008"; // Local PostgreSQL URL
-    private static final String DB_USER = "postgres"; // Replace with your local PostgreSQL user
+    private static final String DB_USER = "com2008"; // Replace with your local PostgreSQL user
     private static final String DB_PASSWORD = "pass"; // Replace with your local PostgreSQL password
 
     private Connection connection = null;
