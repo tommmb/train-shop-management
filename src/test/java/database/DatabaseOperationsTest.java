@@ -11,8 +11,8 @@ import static org.assertj.core.api.Assertions.*;
 
 public class DatabaseOperationsTest {
     private static final String H2_URL = "jdbc:h2:mem:testdb;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE";
-    private static final String H2_USER = "com2008";
-    private static final String H2_PASSWORD = "pass";
+    private static final String H2_USER = "test";
+    private static final String H2_PASSWORD = "test";
     private Connection connection;
     private DatabaseOperations databaseOperations;
 
